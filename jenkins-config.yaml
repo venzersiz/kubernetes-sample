@@ -58,6 +58,9 @@ jenkins:
         - hostPathVolume:
             hostPath: "/var/run/docker.sock"
             mountPath: "/var/run/docker.sock"
+        - hostPathVolume:
+            hostPath: "/etc/sysconfig/docker"
+            mountPath: "/etc/sysconfig/docker"
         yamlMergeStrategy: "override"
   crumbIssuer:
     standard:
